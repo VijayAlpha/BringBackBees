@@ -1,0 +1,11 @@
+{
+  "name": "bringbackbees",
+  "version": "1.0.0",
+  "description": "a nft \u001b[D\u001b[D\u001b[D\u001b[D\u001b[A\u001b[C\u001b[C\u001b[CNFT landing\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dproject called BBB ()\u001b[D'bring back bees')\u001b[Clanding page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vijay M",
+  "license": "ISC"
+}
