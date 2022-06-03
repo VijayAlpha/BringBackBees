@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "TTOctosquares-Black";
+  src:url("fonts/TT.Octosquares/TTOctosquares-Black.otf");
+  src:url("fonts/TT.Octosquares/TTOctosquares-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
