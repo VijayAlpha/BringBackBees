@@ -1,0 +1,10 @@
+.footer{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    &__text-box{
+        margin: 0 2rem;
+    }
+}

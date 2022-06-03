@@ -1,0 +1,24 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  transition: 0.2s;
+  transform: skewX(-20deg);
+  &__text {
+    font-size: 2.4rem;
+    letter-spacing: -0.065em;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    background-color: $color-secondary;
+    color: $color-primary;
+    border-radius: 6px;
+    transition: 0.2s;
+  }
+
+  &__image {
+    height: 70%;
+  }
+
+  &:hover {
+    transform: scaleX(1.2);
+  }
+}

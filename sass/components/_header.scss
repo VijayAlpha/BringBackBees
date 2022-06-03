@@ -1,0 +1,37 @@
+.header {
+  height: 75vh;
+  // background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  al &__text-box {
+    height: 100%;
+  }
+
+  &__primary {
+    height: 50%;
+    font-family: "TTOctosquaresCond-BlackIt";
+    font-size: 50rem;
+    color: $color-primary;
+    text-align: center;
+    line-height: 40rem;
+    letter-spacing: -0.205em;
+    text-transform: uppercase;
+    transform: translateX(-4rem);
+    user-select: none;
+
+    & span:hover {
+      color: $color-secondary;
+    }
+  }
+
+  &__secondary {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    letter-spacing: -0.065em;
+  }
+}

@@ -7,3 +7,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "TTOctosquaresComp-BlackIt";
+  src:url("fonts/TT.Octosquares/TTOctosquaresComp-BlackIt.otf");
+  src:url("fonts/TT.Octosquares/TTOctosquaresComp-BlackIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
