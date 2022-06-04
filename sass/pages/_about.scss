@@ -1,0 +1,13 @@
+.about{
+    display: flex;
+    padding: 2rem;
+    &__text-box{
+        // background-color: aqua;
+        padding: 2rem;
+    }
+
+    &__image-box{
+        // background-color: brown;
+        padding: 2rem;
+    }
+}

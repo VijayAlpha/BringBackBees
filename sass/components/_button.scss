@@ -2,7 +2,7 @@
   cursor: pointer;
   display: flex;
   transition: 0.2s;
-  transform: skewX(-20deg);
+  transform: skewX(-10deg);
   &__text {
     font-size: 2.4rem;
     letter-spacing: -0.065em;
@@ -19,6 +19,6 @@
   }
 
   &:hover {
-    transform: scaleX(1.2);
+    transform: scaleX(1.1);
   }
 }

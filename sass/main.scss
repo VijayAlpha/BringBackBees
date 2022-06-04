@@ -3,11 +3,14 @@
 
 @import "base/base";
 @import "base/typo";
+@import "base/utility";
 
 @import "components/header";
 @import "components/button";
+@import "components/vision";
 
 @import "layout/footer";
 @import "layout/navigation";
 
+@import "pages/about";
 @import "pages/home";

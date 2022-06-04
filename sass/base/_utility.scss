@@ -1,0 +1,32 @@
+.margin{
+    margin: 2rem;
+
+    &--sides{
+        margin: 0 2rem;
+    }
+
+    &--top{
+        margin: 2rem 0;
+    }
+
+    &--sm{
+        margin: 1rem;
+        &--sides{
+            margin: 0 1rem;
+        }
+    }
+    &--la{
+        margin: 3rem;
+    }
+}
+
+.padding{
+    &--top{
+        padding: 2rem 0;
+    }
+}
+
+.flex{
+    display: flex;
+    flex-direction: row-reverse;
+}
