@@ -44,5 +44,9 @@
 .text{
     &--right{
         text-align: right;
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
     }
 }
