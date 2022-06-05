@@ -16,6 +16,18 @@
     <title>Bring Back Bees - Home</title>
   </head>
   <body>
+    <div class="wrapper" id="wrapper">
+      <div class="bee">
+        <div class="bee-body">
+          <div class="blink"></div>
+          <div class="mouth"></div>
+          <div class="antenae"></div>
+          <div class="bee-left"></div>
+          <div class="bee-right"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="navigation">
       <img src="img/logo-x1.png" alt="BBB Logo" class="navigation__logo" />
       <nav class="navigation__nav">
@@ -65,13 +77,27 @@
           <span class="heading__secondary--1">Bring</span>
           <span class="heading__secondary--2">Back</span>
           <span class="heading__secondary--3">Bees</span>
-          <span class="heading__secondary--4 ">B</span>
-
+          <span class="heading__secondary--4">B</span>
         </h1>
         <h1 class="header__primary">
-          <span class="heading-primary--1" onmouseover="displayLetter('1')"  onmouseout="addLetter('1')">B</span>
-          <span class="heading-primary--2" onmouseover="displayLetter('2')" onmouseout="addLetter('2')">B</span>
-          <span class="heading-primary--3" onmouseover="displayLetter('3')" onmouseout="addLetter('3')">B</span>
+          <span
+            class="heading-primary--1"
+            onmouseover="displayLetter('1')"
+            onmouseout="addLetter('1')"
+            >B</span
+          >
+          <span
+            class="heading-primary--2"
+            onmouseover="displayLetter('2')"
+            onmouseout="addLetter('2')"
+            >B</span
+          >
+          <span
+            class="heading-primary--3"
+            onmouseover="displayLetter('3')"
+            onmouseout="addLetter('3')"
+            >B</span
+          >
         </h1>
       </div>
     </header>
@@ -79,20 +105,31 @@
       <span class="footer__text-box"> © 2022, Bring Back Bees. </span>
 
       <div class="button button__il">
-        <span class="button__text">ROADMAP </span>
+        <a href="./roadmap.html" class="navigation__link">
+          <span class="button__text">ROADMAP </span>
+        </a>
       </div>
     </footer>
 
     <script>
-      function displayLetter(n){
+      function displayLetter(n) {
         console.log(n);
-        document.querySelector(`.heading__secondary--${n}`).style.visibility = 'visible';
+        document.querySelector(`.heading__secondary--${n}`).style.visibility =
+          "visible";
       }
 
-      function addLetter(n){
+      function addLetter(n) {
         console.log(n);
-        document.querySelector(`.heading__secondary--${n}`).style.visibility = 'hidden';
+        document.querySelector(`.heading__secondary--${n}`).style.visibility =
+          "hidden";
       }
+
+      let circle = document.getElementById("wrapper");
+      const onMouseMove = (e) => {
+        circle.style.left = -200 + e.pageX + "px";
+        circle.style.top = -80 + e.pageY + "px";
+      };
+      document.addEventListener("mousemove", onMouseMove);
     </script>
   </body>
 </html>
