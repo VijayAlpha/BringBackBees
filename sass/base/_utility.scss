@@ -29,4 +29,14 @@
 .flex{
     display: flex;
     flex-direction: row-reverse;
+
+    &--center{
+        justify-content: center;
+    }
+}
+
+.link{
+    display: block;
+    text-decoration: none;
+    margin: 0 0.2rem;
 }

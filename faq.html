@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Bring Back Bees - Home</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <img src="img/logo-x1.png" alt="BBB Logo" class="navigation__logo" />
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <a href="./" class="navigation__link">
+            <li class="navigation__item">Home</li>
+          </a>
+          <a href="./about.html" class="navigation__link">
+            <li class="navigation__item">About</li>
+          </a>
+          <a href="./team.html" class="navigation__link">
+            <li class="navigation__item ">Team</li>
+          </a>
+          <a href="./vision.html" class="navigation__link">
+            <li class="navigation__item">Vision</li>
+          </a>
+          <a href="./faq.html" class="navigation__link">
+            <li class="navigation__item navigation__item--current">FAQ</li>
+          </a>
+        </ul>
+        <ul class="navigation__list">
+          <a href="#" class="navigation__link">
+            <li class="navigation__item navigation__item--icon">
+              <img
+                src="/img/icon-twitter.svg"
+                alt="Instagram icon"
+                class="navigation__icon"
+              />
+            </li>
+          </a>
+          <a href="#" class="navigation__link">
+            <li class="navigation__item navigation__item--icon">
+              <img
+                src="/img/icon-instagram.svg"
+                alt="Instagram icon"
+                class="navigation__icon"
+              />
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="about">
+        <div class="about__text-box">
+          <div class="about__heading">
+            <h2 class="heading__secondary margin--sides">LOOK</h2>
+            <h1 class="heading__primary margin--sm--sides">FAQ</h1>
+          </div>
+        </div>
+      </section>
+      <section class="faq-section">
+        <div class="faq">
+          <button class="accordion">A lacus vestibulum sed arcu non odio</button>
+          <div class="panel">
+            <p class="faq__para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">Excepteur sint occaecat cupidatat non proident</button>
+          <div class="panel">
+            <p class="faq__para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">Sed ut perspiciatis unde omnis iste</button>
+          <div class="panel">
+            <p class="faq__para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">Excepteur sint occaecat cupidatat non proident</button>
+          <div class="panel">
+            <p class="faq__para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">Excepteur sint occaecat cupidatat non proident</button>
+          <div class="panel">
+            <p class="faq__para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">Excepteur sint occaecat cupidatat non proident</button>
+          <div class="panel">
+            <p class="faq__para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="footer__text-box"> © 2022, Bring Back Bees. </span>
+
+      <!-- <div class="button button__il">
+        <span class="button__text">ROADMAP </span>
+      </div> -->
+    </footer>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
