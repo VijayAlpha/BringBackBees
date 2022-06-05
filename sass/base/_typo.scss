@@ -12,6 +12,10 @@ body {
   line-height: 8rem;
   text-transform: uppercase;
 
+  &--1{
+    line-height: 9rem;
+  }
+
   @include respond(tab-port) {
     font-size: 9.4rem;
 }

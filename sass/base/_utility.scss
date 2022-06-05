@@ -40,3 +40,9 @@
     text-decoration: none;
     margin: 0 0.2rem;
 }
+
+.text{
+    &--right{
+        text-align: right;
+    }
+}
