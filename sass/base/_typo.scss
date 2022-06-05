@@ -11,6 +11,10 @@ body {
   color: $color-primary;
   line-height: 8rem;
   text-transform: uppercase;
+
+  @include respond(tab-port) {
+    font-size: 9.4rem;
+}
 }
 
 .heading__secondary {
@@ -18,9 +22,9 @@ body {
   color: $color-secondary;
   text-transform: uppercase;
   line-height: 4rem;
-  &--2 {
-    color: $color-primary;
-  }
+  // &--2 {
+  //   color: $color-primary;
+  // }
 }
 
 .para{

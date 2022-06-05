@@ -1,6 +1,5 @@
 .header {
   height: 75vh;
-  // background-color: aqua;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,6 +25,9 @@
   }
 
   &__secondary {
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
     font-family: $font-montserrat;
     font-style: normal;
     font-weight: 700;
@@ -33,5 +35,10 @@
     line-height: 59px;
     text-align: center;
     letter-spacing: -0.065em;
+    // transform: translateX(5%);
+
+    & span:not(:last-child) {
+      position: absolute;
+    }
   }
 }

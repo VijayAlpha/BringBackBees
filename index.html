@@ -65,11 +65,13 @@
           <span class="heading__secondary--1">Bring</span>
           <span class="heading__secondary--2">Back</span>
           <span class="heading__secondary--3">Bees</span>
+          <span class="heading__secondary--4 ">B</span>
+
         </h1>
         <h1 class="header__primary">
-          <span class="heading-primary--1">B</span>
-          <span class="heading-primary--2">B</span>
-          <span class="heading-primary--3">B</span>
+          <span class="heading-primary--1" onmouseover="displayLetter('1')"  onmouseout="addLetter('1')">B</span>
+          <span class="heading-primary--2" onmouseover="displayLetter('2')" onmouseout="addLetter('2')">B</span>
+          <span class="heading-primary--3" onmouseover="displayLetter('3')" onmouseout="addLetter('3')">B</span>
         </h1>
       </div>
     </header>
@@ -80,5 +82,17 @@
         <span class="button__text">ROADMAP </span>
       </div>
     </footer>
+
+    <script>
+      function displayLetter(n){
+        console.log(n);
+        document.querySelector(`.heading__secondary--${n}`).style.visibility = 'visible';
+      }
+
+      function addLetter(n){
+        console.log(n);
+        document.querySelector(`.heading__secondary--${n}`).style.visibility = 'hidden';
+      }
+    </script>
   </body>
 </html>

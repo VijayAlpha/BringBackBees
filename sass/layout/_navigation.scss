@@ -5,6 +5,11 @@
     align-items: center;
     padding: 2.5rem;
 
+    
+    @include respond(phone) {
+        display: none;
+    }
+
     &__logo{
         height: 4rem;
     }

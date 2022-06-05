@@ -11,6 +11,12 @@
     width: 22rem;
     height: 33rem;
     margin: 2.5rem;
+
+    @include respond(phone) {
+      width: 20rem;
+      height: 30rem;
+      margin: .5rem;
+    }
   }
 
   &__img-box {
