@@ -1,96 +1,167 @@
-.navigation{
-    // background-color: aqua;
+.navigation {
+  // background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  z-index: 10;
+  transition: 0.4s;
+
+  @include respond(tab-port) {
+    background-color: $color-white;
+
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.5rem;
-    z-index: 10;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(-100%);
+    opacity: 0.4;
+  }
 
-    
+  &__open {
     @include respond(tab-port) {
-        background-color: brown;
-
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        opacity: 1;
+      transform: translateX(0) !important;
     }
+  }
 
-    &__logo{
-        height: 4rem;
-    }
+  &__logo {
+    height: 4rem;
 
-    &__nav{
-        display: flex;
-
-        @include respond(tab-port) {
-           width: 100%;
-           height: 100%;
-           flex-direction: column;
-           justify-content: space-between;
-
-        
-        }
-    }
-
-    &__list{
-        display: flex;
-        list-style: none;
-        font-size: $default-font-size;
-        text-transform: uppercase;
-
-          
     @include respond(tab-port) {
-       
-        flex-direction: column;
-        justify-content: space-around;
-        &:last-child{
-            flex-direction: row;
-        }
+      height: 7rem;
     }
+  }
+
+  &__nav {
+    display: flex;
+
+    @include respond(tab-port) {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    font-size: $default-font-size;
+    text-transform: uppercase;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: right;
+      font-size: 200%;
+      &:first-child {
+        height: 70%;
+        font-size: 260%;
+      }
+
+      &:last-child {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    margin: 0 0.2rem;
+  }
+
+  &__item {
+    color: $color-primary;
+    padding: 0.1rem 2rem;
+    border: 4px $color-primary solid;
+    border-radius: 6px;
+    transition: 0.2s;
+    @include hoverBuzz;
+
+    @include respond(tab-port) {
+      text-align: center;
+      width: 100%;
     }
 
-    &__link{
-        display: block;
-        text-decoration: none;
-        margin: 0 0.2rem;
+    &--current {
+      background-color: $color-secondary;
+      border: 4px $color-secondary solid;
     }
 
-    &__item{
-        color: $color-primary;
-        padding: 0.1rem 2rem;
-        border: 4px $color-primary solid;
-        border-radius: 6px; 
-        transition: 0.2s;
-        @include hoverBuzz;
+    &--icon {
+      border: 4px $color-secondary solid;
+      background-color: $color-primary;
+      padding: 0.4rem;
+      height: 4rem;
 
-        &--current{
-            background-color: $color-secondary;
-            border: 4px $color-secondary solid;
-        }
+      @include respond(tab-port) {
+        height: 5rem;
+      }
 
-        &--icon{
-            border: 4px $color-secondary solid;
-            background-color: $color-primary;
-            padding: 0.4rem;
-            height: 4rem;
-
-            &:hover{
-                background-color: $color-primary !important;
-                border: 4px $color-secondary solid;
-            }
-        }
-
-        &:hover{
-            background-color: $color-secondary;
-            border: 4px $color-secondary solid;
-        }
+      &:hover {
+        background-color: $color-primary !important;
+        border: 4px $color-secondary solid;
+      }
     }
 
-    &__icon{
-        width: 100%;
-        height: 100%;
+    &:hover {
+      background-color: $color-secondary;
+      border: 4px $color-secondary solid;
     }
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__x {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    // margin-top: 3.5rem;
+
+    &,
+    &::before,
+    &::after {
+        width: 3rem;
+        height: 2px;
+        background-color: $color-grey-dark-3;
+        display: inline-block;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+
+    &::before { top: -.8rem; }
+    &::after { top: .8rem; }
+}
+}
+
+.nav-btn {
+  display: none;
+
+  @include respond(tab-port) {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    // border-radius: 100px;
+    // background-color: $color-white;
+    // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    margin: 2.5rem;
+  }
 }
