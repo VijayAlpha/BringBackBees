@@ -1,7 +1,6 @@
 body {
   font-family: "TTOctosquares-Black", sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7;
   color: $color-secondary;
 }
@@ -11,10 +10,6 @@ body {
   color: $color-primary;
   line-height: 8rem;
   text-transform: uppercase;
-
-  &--1{
-    line-height: 9rem;
-  }
 
   @include respond(tab-port) {
     font-size: 9.4rem;
@@ -26,14 +21,15 @@ body {
   color: $color-secondary;
   text-transform: uppercase;
   line-height: 4rem;
-  // &--2 {
-  //   color: $color-primary;
-  // }
+  &--yellow {
+    color: $color-primary;
+  }
 }
 
 .para{
     font-family: $font-montserrat;
-    font-size: 2rem;
+    font-size: 1.9rem;
     letter-spacing: -0.1rem;
     font-weight: 600;
+    text-align: justify;
 }

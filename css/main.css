@@ -79,7 +79,6 @@ body {
 body {
   font-family: "TTOctosquares-Black", sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7;
   color: #000000;
 }
@@ -89,10 +88,6 @@ body {
   color: #F8BE1D;
   line-height: 8rem;
   text-transform: uppercase;
-}
-
-.heading__primary--1 {
-  line-height: 9rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -108,11 +103,16 @@ body {
   line-height: 4rem;
 }
 
+.heading__secondary--yellow {
+  color: #F8BE1D;
+}
+
 .para {
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   letter-spacing: -0.1rem;
   font-weight: 600;
+  text-align: justify;
 }
 
 .margin {
@@ -1016,18 +1016,6 @@ al .header__text-box {
   animation-iteration-count: 1;
 }
 
-.vision {
-  margin: 10rem 0;
-}
-
-.vision__image-box {
-  width: 98vw;
-}
-
-.vision__image {
-  width: 100%;
-}
-
 .faq-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1211,6 +1199,7 @@ al .header__text-box {
 .about__text-box {
   padding: 2rem;
   width: 50%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1222,6 +1211,15 @@ al .header__text-box {
 .about__image-box {
   padding: 2rem;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1231,12 +1229,7 @@ al .header__text-box {
 }
 
 .about__img {
-  width: 100%;
-}
-
-.about__img--1 {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  width: 50%;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1247,7 +1240,14 @@ al .header__text-box {
             flex-direction: column;
     text-align: center;
   }
-  .about__img {
-    width: 100%;
-  }
+}
+
+.vision__image-box {
+  width: 98vw;
+  padding: 3rem;
+  text-align: center;
+}
+
+.vision__image {
+  width: 60%;
 }
