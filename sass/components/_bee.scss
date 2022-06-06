@@ -1,19 +1,19 @@
-$orangeL: #FF8303;
-$orangeD: #FF7300;
-$yellowL: #FFD764;
-$yellowD: #FFA70B;
-$greyL: #F0F0F0;
+$orangeL: #ff8303;
+$orangeD: #ff7300;
+$yellowL: #ffd764;
+$yellowD: #ffa70b;
+$greyL: #f0f0f0;
 $black: #363636;
-$greyD: #F0F0F0;
-$whiteD: #F8F8FF;
-$whiteL: #FFF;
+$greyD: #f0f0f0;
+$whiteD: #f8f8ff;
+$whiteL: #fff;
 $bluebee: #7ec0ee;
 
 // .road-section {
-//   background: linear-gradient(45deg, $orangeD, $yellowD); 
+//   background: linear-gradient(45deg, $orangeD, $yellowD);
 //   background-color: #7ec0ee;
 //   display: block;
-//   cursor: default; 
+//   cursor: default;
 //   height: 100%;
 //   width: 100%;
 //   margin: 0;
@@ -32,35 +32,38 @@ $bluebee: #7ec0ee;
   width: 130px;
   border-radius: 50%;
   background-size: 130px 65px, cover, cover, cover;
-  background-image:
-                    linear-gradient(to bottom, transparent 50%, darken($black, 5%) 50%),
-                    radial-gradient(circle at 51% 36%, $yellowL 47%, transparent 47%),
-                    radial-gradient(circle at 51% 53%, $yellowL 55%, transparent 55%),
-                    radial-gradient(circle at 60% 53%, lighten($yellowL, 15%) 60%, transparent 60%)
-    ; /*stripes on body*/
-  box-shadow: 
-              35px -105px 0 -44px $yellowL, /*eyeballs*/
-              -35px -105px 0 -44px $yellowL, /*eyeballs*/
-              38px -107px 0 -41px lighten($yellowL, 15%), /*eyeballs*/
-              -32px -107px 0 -41px lighten($yellowL, 15%), /*eyeballs*/
-               35px -105px 0 -38px darken($yellowL, 10%), /*eyeballs*/
-              -35px -105px 0 -38px darken($yellowL, 10%), /*eyeballs*/
-    
-              3px -95px 0 -18px $yellowL, /*head*/
-              5px -100px 0 -15px lighten($yellowL, 15%), /*head*/
-              0px -95px 0 -10px darken($yellowL, 10%), /*head*/
-    
-              -35px -183px 0 -57px $black, /*antenae nubs*/ 
-              35px -183px 0 -57px $black, /*antenae nubs*/
-              -33px -185px 0 -56px lighten($black, 10%), /*antenae nubs*/ 
-              37px -185px 0 -56px lighten($black, 10%), /*antenae nubs*/
-              -35px -184px 0 -54px darken($black, 5%), /*antenae nubs*/ 
-              35px -184px 0 -54px darken($black, 5%); /*antenae nubs*/
-  
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      darken($black, 5%) 50%
+    ),
+    radial-gradient(circle at 51% 36%, $yellowL 47%, transparent 47%),
+    radial-gradient(circle at 51% 53%, $yellowL 55%, transparent 55%),
+    radial-gradient(
+      circle at 60% 53%,
+      lighten($yellowL, 15%) 60%,
+      transparent 60%
+    ); /*stripes on body*/
+  box-shadow: 35px -105px 0 -44px $yellowL,
+    /*eyeballs*/ -35px -105px 0 -44px $yellowL,
+    /*eyeballs*/ 38px -107px 0 -41px lighten($yellowL, 15%),
+    /*eyeballs*/ -32px -107px 0 -41px lighten($yellowL, 15%),
+    /*eyeballs*/ 35px -105px 0 -38px darken($yellowL, 10%),
+    /*eyeballs*/ -35px -105px 0 -38px darken($yellowL, 10%),
+    /*eyeballs*/ 3px -95px 0 -18px $yellowL,
+    /*head*/ 5px -100px 0 -15px lighten($yellowL, 15%),
+    /*head*/ 0px -95px 0 -10px darken($yellowL, 10%),
+    /*head*/ -35px -183px 0 -57px $black,
+    /*antenae nubs*/ 35px -183px 0 -57px $black,
+    /*antenae nubs*/ -33px -185px 0 -56px lighten($black, 10%),
+    /*antenae nubs*/ 37px -185px 0 -56px lighten($black, 10%),
+    /*antenae nubs*/ -35px -184px 0 -54px darken($black, 5%),
+    /*antenae nubs*/ 35px -184px 0 -54px darken($black, 5%); /*antenae nubs*/
+
   &:after {
     position: absolute;
-    content: '';
-    background: linear-gradient(to bottom, transparent 50%, $black 50%); 
+    content: "";
+    background: linear-gradient(to bottom, transparent 50%, $black 50%);
     height: 130px;
     width: 130px;
     right: 0px;
@@ -71,8 +74,12 @@ $bluebee: #7ec0ee;
   }
   &:before {
     position: absolute;
-    content: '';
-    background: linear-gradient(to bottom, transparent 50%, lighten($black, 5%) 50%); 
+    content: "";
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      lighten($black, 5%) 50%
+    );
     height: 130px;
     width: 130px;
     right: 0px;
@@ -81,42 +88,42 @@ $bluebee: #7ec0ee;
     border-radius: 50%;
     clip-path: ellipse(41% at 61% 48%);
   }
-}  
+}
 
 .mouth {
-    /*mouth*/
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 55px;
-    bottom: 128px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    border-bottom: 5px solid $black; 	
-  }
+  /*mouth*/
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 55px;
+  bottom: 128px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-bottom: 5px solid $black;
+}
 
 .antenae {
   position: relative;
-  z-index: -2;  
+  z-index: -2;
   width: 60px;
-  height: 60px;   
+  height: 60px;
   border-radius: 50%;
   right: -75px;
   bottom: 130px;
   border: 8px solid $black; /*right antenae stem*/
   box-sizing: border-box;
   border-style: hidden hidden hidden solid;
-  transform: skewY(-20deg);  
+  transform: skewY(-20deg);
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 60px;
-    height: 60px;   
+    height: 60px;
     border-radius: 50%;
     left: -87px;
     bottom: 30px;
-    border: 8px solid $black;  /*left antenae stem*/
+    border: 8px solid $black; /*left antenae stem*/
     box-sizing: border-box;
     border-style: hidden solid hidden hidden;
     transform: skewY(40deg);
@@ -125,7 +132,7 @@ $bluebee: #7ec0ee;
     /*stinger*/
     transform: skewY(20deg);
     position: absolute;
-    content: '';
+    content: "";
     bottom: -213px;
     left: -33px;
     width: 30px;
@@ -136,8 +143,8 @@ $bluebee: #7ec0ee;
 }
 
 .bee-left {
-  animation: flight-left .5s ease-out infinite;
-  content: '';
+  animation: flight-left 0.5s ease-out infinite;
+  content: "";
   position: absolute;
   background-color: $whiteD; /*large wing left*/
   height: 100px;
@@ -149,8 +156,8 @@ $bluebee: #7ec0ee;
   z-index: -1;
   box-shadow: inset 30px 105px 0 -70px $whiteL;
   &:after {
-    animation: flight-little .5s ease-in-out infinite;
-    content: '';
+    animation: flight-little 0.5s ease-in-out infinite;
+    content: "";
     position: absolute;
     width: 100px;
     height: 110px;
@@ -158,14 +165,13 @@ $bluebee: #7ec0ee;
     left: 48px;
     background-color: $greyL; /*little wing left*/
     border-radius: 50% / 50% 0 100% 50%;
-    box-shadow: inset 10px 1px 0px 0px $whiteL, 
-                inset 30px 7px 0px 0px #f6f6f6;
+    box-shadow: inset 10px 1px 0px 0px $whiteL, inset 30px 7px 0px 0px #f6f6f6;
   }
- }
+}
 
 .bee-right {
-  animation: flight-right .5s ease-in-out infinite;
-  content: '';
+  animation: flight-right 0.5s ease-in-out infinite;
+  content: "";
   position: absolute;
   background-color: $whiteD; /*large wing right*/
   height: 100px;
@@ -178,8 +184,8 @@ $bluebee: #7ec0ee;
   z-index: -1;
   box-shadow: inset 30px 105px 0 -70px $whiteL;
   &:after {
-    animation: flight-little .5s ease-in-out infinite;
-    content: '';
+    animation: flight-little 0.5s ease-in-out infinite;
+    content: "";
     position: absolute;
     width: 100px;
     height: 110px;
@@ -187,42 +193,66 @@ $bluebee: #7ec0ee;
     right: 48px;
     background-color: $greyL; /*little wing right*/
     border-radius: 50% / 0 50% 50% 100%;
-    box-shadow: inset -10px 1px 0px 0px $whiteL, 
-                inset -30px 7px 0px 0px #f6f6f6;
+    box-shadow: inset -10px 1px 0px 0px $whiteL, inset -30px 7px 0px 0px #f6f6f6;
   }
- }
- 
+}
+
 .blink {
   position: relative;
-  &:before { 
+  &:before {
     /*left pupil and eyeball shadows*/
-    background-image: radial-gradient(circle at 71% 38%, #fff 8%, transparent 8%),
-                      radial-gradient(circle at 65% 50%, $black 16%, transparent 16%),
-                      radial-gradient(circle at 69% 47%, lighten($black, 5%) 19%, transparent 19%),
-                      radial-gradient(circle at 65% 50%, darken($black, 5%) 25%, transparent 25%),
-                      radial-gradient(ellipse at 50% 55%, $whiteD 50%, transparent 50%),
-                      radial-gradient(circle at 70% 50%, $whiteL 65%, transparent 65%);
-    left: 2px; 
+    background-image: radial-gradient(
+        circle at 71% 38%,
+        #fff 8%,
+        transparent 8%
+      ),
+      radial-gradient(circle at 65% 50%, $black 16%, transparent 16%),
+      radial-gradient(
+        circle at 69% 47%,
+        lighten($black, 5%) 19%,
+        transparent 19%
+      ),
+      radial-gradient(
+        circle at 65% 50%,
+        darken($black, 5%) 25%,
+        transparent 25%
+      ),
+      radial-gradient(ellipse at 50% 55%, $whiteD 50%, transparent 50%),
+      radial-gradient(circle at 70% 50%, $whiteL 65%, transparent 65%);
+    left: 2px;
   }
-  &:before, &:after {
+  &:before,
+  &:after {
     clip-path: ellipse(50% 20% at 50% 50%);
-    content: '';
+    content: "";
     position: absolute;
     height: 55px;
     width: 55px;
     border-radius: 50%;
-    background-color: $greyL;   
-    top: -67px;     
+    background-color: $greyL;
+    top: -67px;
     animation: blink 10s linear infinite;
   }
-  &:after {   
+  &:after {
     /*right pupil and eyeball shadows*/
-    background-image: radial-gradient(circle at 41% 38%, #fff 8%, transparent 8%),
-                      radial-gradient(circle at 35% 50%, $black 16%, transparent 16%),
-                      radial-gradient(circle at 39% 47%, lighten($black, 5%) 19%, transparent 19%),
-                      radial-gradient(circle at 35% 50%, darken($black, 5%) 25%, transparent 25%),
-                      radial-gradient(ellipse at 50% 55%, $whiteD 50%, transparent 50%),
-                      radial-gradient(circle at 70% 50%, $whiteL 65%, transparent 65%);
+    background-image: radial-gradient(
+        circle at 41% 38%,
+        #fff 8%,
+        transparent 8%
+      ),
+      radial-gradient(circle at 35% 50%, $black 16%, transparent 16%),
+      radial-gradient(
+        circle at 39% 47%,
+        lighten($black, 5%) 19%,
+        transparent 19%
+      ),
+      radial-gradient(
+        circle at 35% 50%,
+        darken($black, 5%) 25%,
+        transparent 25%
+      ),
+      radial-gradient(ellipse at 50% 55%, $whiteD 50%, transparent 50%),
+      radial-gradient(circle at 70% 50%, $whiteL 65%, transparent 65%);
     left: 73px;
   }
 }
@@ -230,7 +260,11 @@ $bluebee: #7ec0ee;
 .wrapper {
   z-index: 100;
   position: absolute;
-  transform: scale(0.1);    
+  transform: scale(0.1);
+
+  @include respond(tab-port) {
+    display: none;
+  }
 }
 
 // .shadow {
@@ -274,7 +308,7 @@ $bluebee: #7ec0ee;
   }
   50% {
     clip-path: ellipse(50% 50% at 50% 50%);
-  }  
+  }
   60% {
     clip-path: ellipse(50% 20% at 50% 50%);
   }
@@ -302,27 +336,27 @@ $bluebee: #7ec0ee;
 }
 
 @keyframes hover {
-	0% {
-		transform: translateY(0px);
-	}
-	50% {
-		transform: translateY(-15px);
-	}
-	100% {
-		transform: translateY(0px);
-	}
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes shadow {
-	0% {
+  0% {
     width: 170px;
   }
-	50% {
+  50% {
     width: 180px;
   }
-	100% {
+  100% {
     width: 170px;
-	}
+  }
 }
 
 @keyframes flight-left {
