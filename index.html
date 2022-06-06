@@ -15,7 +15,7 @@
 
     <title>Bring Back Bees - Home</title>
   </head>
-  <body>
+  <body class="body__home">
     <div class="wrapper" id="wrapper">
       <div class="bee">
         <div class="bee-body">
@@ -29,7 +29,9 @@
     </div>
 
     <div class="navigation">
-      <img src="img/logo-x1.png" alt="BBB Logo" class="navigation__logo" />
+      <a href="/" class="navigation__link">
+        <img src="img/logo-x1.png" alt="BBB Logo" class="navigation__logo" />
+      </a>
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <a href="#" class="navigation__link">
@@ -49,7 +51,7 @@
           </a>
         </ul>
         <ul class="navigation__list">
-          <a href="#" class="navigation__link" target="_blank">
+          <a href="https://twitter.com/bbbinsol?s=21&t=Na0ORo4D3f4-m0pW5IioYg" class="navigation__link" target="_blank">
             <li class="navigation__item navigation__item--icon">
               <img
                 src="/img/icon-twitter.svg"
@@ -58,7 +60,7 @@
               />
             </li>
           </a>
-          <a href="#" class="navigation__link"  target="_blank">
+          <a href="https://instagram.com/bbbinsol?igshid=YmMyMTA2M2Y=" class="navigation__link" target="_blank">
             <li class="navigation__item navigation__item--icon">
               <img
                 src="/img/icon-instagram.svg"
@@ -67,7 +69,7 @@
               />
             </li>
           </a>
-          <a href="#" class="navigation__link"  target="_blank">
+          <a href="#" class="navigation__link" target="_blank">
             <li class="navigation__item navigation__item--icon">
               <img
                 src="/img/icon-discord.svg"
@@ -137,7 +139,6 @@
         circle.style.top = -100 + e.pageY + "px";
       };
       document.addEventListener("mousemove", onMouseMove);
-
     </script>
   </body>
 </html>

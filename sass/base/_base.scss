@@ -29,6 +29,12 @@ body {
     position: relative;
 }
 
+.body{
+    &__home{
+        overflow: hidden;
+    }
+}
+
 ::selection {
     background-color: $color-primary;
     color: $color-white;
