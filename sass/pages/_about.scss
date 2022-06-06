@@ -26,6 +26,11 @@
 
     &__img{
         width: 50%;
+
+        &--abt{
+            width: 72%;
+            align-self: flex-end;
+        }
     }
 
     @include respond(tab-port) {
