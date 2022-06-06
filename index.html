@@ -113,13 +113,11 @@
 
     <script>
       function displayLetter(n) {
-        console.log(n);
         document.querySelector(`.heading__secondary--${n}`).style.visibility =
           "visible";
       }
 
       function addLetter(n) {
-        console.log(n);
         document.querySelector(`.heading__secondary--${n}`).style.visibility =
           "hidden";
       }
@@ -127,9 +125,10 @@
       let circle = document.getElementById("wrapper");
       const onMouseMove = (e) => {
         circle.style.left = -200 + e.pageX + "px";
-        circle.style.top = -80 + e.pageY + "px";
+        circle.style.top = -100 + e.pageY + "px";
       };
       document.addEventListener("mousemove", onMouseMove);
+
     </script>
   </body>
 </html>
