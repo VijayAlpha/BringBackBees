@@ -22,6 +22,10 @@
     & span:hover {
       color: $color-secondary;
     }
+
+    @include respond('tab-port'){
+      display: none;
+    }
   }
 
   &__secondary {
@@ -40,5 +44,27 @@
     & span:not(:last-child) {
       position: absolute;
     }
+
+    
+    @include respond('tab-port'){
+      visibility: visible;
+      flex-direction: column;
+      font-size: 14rem;
+      line-height: 109px;
+      height: 100vh;
+      justify-content: center;
+
+      & span:not(:last-child) {
+        position: relative;
+      }
+
+      & span:last-child{
+        display: none;
+      }
+    }
+  }
+
+  @include respond('tab-port'){
+    height: 100vh;
   }
 }
