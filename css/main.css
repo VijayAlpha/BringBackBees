@@ -62,6 +62,8 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
 }
 
 ::-moz-selection {
@@ -1037,6 +1039,9 @@ al .header__text-box {
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
+  width: 96%;
   margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
