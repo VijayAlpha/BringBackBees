@@ -1,46 +1,85 @@
-.blueprint{
+.blueprint {
+  display: flex;
+  width: 80vw;
+  height: 40vh;
+  min-height: 80vh;
+  margin: 6rem 0;
+  background-color: aqua;
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  &__text{
+      padding: 0.4rem 1rem;
+      border-radius: 2px;
+      text-transform: uppercase;
+        background-color: antiquewhite;
+        width: fit-content;
+  }
+
+  &__col > &__text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__text--2{
+    position: relative;
+    top: 30%;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__text--4{
+    position: relative;
+    top: 70%;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__col {
+    background-color: red;
+    flex-grow: 1;
+    text-align: center;
+    border: 1px $color-black solid;
+
+    &--center {
+      flex-grow: 2;
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 12px;
+      position: relative;
+
+      border: none;
+    }
+  }
+
+  &__row {
+    background-color: blue;
+    flex-grow: 1;
+    border: 1px $color-black solid;
+    text-align: center;
+  }
+
+  &__center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: burlywood;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
+    border: 1px $color-black solid;
+
     display: flex;
-    width: 80vw;
-    height: 40vh;
-    min-height: 80vh;
-    margin: 6rem 0;
-    background-color: aqua;
-
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 12px;
-
-    &__col{
-        background-color: red;
-        flex-grow: 1;
-        &--center{
-            flex-grow: 2;
-            display: inline-flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            gap: 12px;
-            position: relative;
-        }
-    }
-
-    &__row{
-        background-color: blue;
-        flex-grow: 1;
-    }
-
-    &__center{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        z-index: 2;
-        background-color: burlywood;
-        width: 25rem;
-        height: 25rem;
-        border-radius: 100%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    justify-content: center;
+    align-items: center;
+  }
 }
