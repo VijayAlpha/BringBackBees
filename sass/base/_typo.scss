@@ -5,31 +5,43 @@ body {
   color: $color-secondary;
 }
 
-.heading__primary {
-  font-size: 11.4rem;
-  color: $color-primary;
-  line-height: 8rem;
-  text-transform: uppercase;
+.heading {
+  width: 85%;
 
-  @include respond(tab-port) {
-    font-size: 9.4rem;
-}
-}
+  &__text-box {
+    // background-color: aqua;
+    padding: 2rem 0;
+    height: 100%;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
 
-.heading__secondary {
-  font-size: 3.5rem;
-  color: $color-secondary;
-  text-transform: uppercase;
-  line-height: 4rem;
-  &--yellow {
+  &__primary {
+    font-size: 8rem;
     color: $color-primary;
+    line-height: 8rem;
+    text-transform: uppercase;
+
+    @include respond(tab-port) {
+      font-size: 9.4rem;
+    }
+  }
+
+  &__secondary {
+    font-size: 3.5rem;
+    color: $color-secondary;
+    text-transform: uppercase;
+    line-height: 4rem;
+    &--yellow {
+      color: $color-primary;
+    }
   }
 }
-
-.para{
-    font-family: $font-montserrat;
-    font-size: 1.9rem;
-    letter-spacing: -0.1rem;
-    font-weight: 600;
-    text-align: justify;
+.para {
+  font-family: $font-montserrat;
+  font-size: 1.9rem;
+  letter-spacing: -0.1rem;
+  font-weight: 600;
+  text-align: justify;
 }

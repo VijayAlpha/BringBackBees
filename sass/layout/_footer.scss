@@ -1,11 +1,14 @@
 .footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 96%;
     margin: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: end;
+
+
+    @media only screen and (max-height: 90vh) {   position: absolute; }
 
     &__text-box{
         margin: 0 2rem;

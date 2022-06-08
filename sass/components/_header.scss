@@ -18,12 +18,26 @@
     text-transform: uppercase;
     transform: translateX(-4rem);
     user-select: none;
+    -webkit-font-smoothing: antialiased;
+
+    // &--1 {
+    //   width: 100%;
+    //   height: 100%;
+      
+    //   background-clip: text;
+    //   -webkit-background-clip: text;
+    //   color: transparent;
+    //   background-image: url(./../../img/test.jpg);
+    //   // background-repeat: repeat;
+    //   //       -webkit-background-clip: text;
+    //   //       -webkit-text-fill-color: transparent;
+    // }
 
     & span:hover {
       color: $color-secondary;
     }
 
-    @include respond('tab-port'){
+    @include respond("tab-port") {
       display: none;
     }
   }
@@ -45,8 +59,7 @@
       position: absolute;
     }
 
-    
-    @include respond('tab-port'){
+    @include respond("tab-port") {
       visibility: visible;
       flex-direction: column;
       font-size: 14rem;
@@ -58,13 +71,13 @@
         position: relative;
       }
 
-      & span:last-child{
+      & span:last-child {
         display: none;
       }
     }
   }
 
-  @include respond('tab-port'){
+  @include respond("tab-port") {
     height: 100vh;
   }
 }
