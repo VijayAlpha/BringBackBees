@@ -1,6 +1,8 @@
 .about{
     display: flex;
     padding: 2rem;
+
+    min-height: 80vh;
     &__text-box{
         // background-color: aqua;
         padding: 2rem;
