@@ -9,5 +9,4 @@ navEl.insertAdjacentHTML("beforebegin", navBtn);
 document.querySelector(".nav-btn").addEventListener("click", (e) => {
   e.preventDefault();
   navEl.classList.toggle('navigation__open');
-  console.log("dd");
 });

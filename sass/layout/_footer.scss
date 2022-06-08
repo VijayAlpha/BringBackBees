@@ -8,7 +8,7 @@
     align-items: end;
 
 
-    @media only screen and (max-height: 90vh) {   position: absolute; }
+    @media only screen and (min-height: 100vh) {   position: absolute; }
 
     &__text-box{
         margin: 0 2rem;
