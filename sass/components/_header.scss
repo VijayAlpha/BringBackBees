@@ -67,8 +67,13 @@
       height: 100vh;
       justify-content: center;
 
+      
       & span:not(:last-child) {
         position: relative;
+        &:hover{
+          color: $color-primary;
+        }
+  
       }
 
       & span:last-child {
