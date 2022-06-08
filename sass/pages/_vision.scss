@@ -8,5 +8,10 @@
 
     &__image{
         width: 60%;
+
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 1rem;
+        }
     }
 }
