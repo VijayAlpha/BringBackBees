@@ -4,23 +4,21 @@
   height: 40vh;
   min-height: 80vh;
   margin: 6rem 0;
-  background-color: aqua;
+  // background-color: aqua;
   cursor: pointer;
 
   display: inline-flex;
   flex-wrap: wrap;
   gap: 12px;
 
-  // &--hide{
-  //   display: none;
-  // }
+ 
 
-  &__text{
-      padding: 0.4rem 1rem;
-      border-radius: 2px;
-      text-transform: uppercase;
-        background-color: antiquewhite;
-        width: fit-content;
+  &__text {
+    padding: 0.4rem 1rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    background-color: antiquewhite;
+    width: fit-content;
   }
 
   &__col > &__text {
@@ -30,7 +28,7 @@
     transform: translateX(-50%);
   }
 
-  &__text--2{
+  &__text--2 {
     position: relative;
     top: 30%;
 
@@ -38,7 +36,7 @@
     transform: translateX(-50%);
   }
 
-  &__text--4{
+  &__text--4 {
     position: relative;
     top: 70%;
 
@@ -47,10 +45,14 @@
   }
 
   &__col {
-    background-color: red;
+    // background-color: red;
     flex-grow: 1;
     text-align: center;
     border: 1px $color-black solid;
+
+    @include respond(tab-port) {
+      display: none;
+    }
 
     &--center {
       flex-grow: 2;
@@ -65,7 +67,7 @@
   }
 
   &__row {
-    background-color: blue;
+    // background-color: blue;
     flex-grow: 1;
     border: 1px $color-black solid;
     text-align: center;
