@@ -43,6 +43,15 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+main{
+    padding: 3rem;
+
+    @include respond(phone) { // width < 900?
+        padding: 3rem 1.2rem;
+    }
+}
+
 ::selection {
     background-color: $color-primary;
     color: $color-white;

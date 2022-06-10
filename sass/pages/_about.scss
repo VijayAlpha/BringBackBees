@@ -1,51 +1,65 @@
-.about{
-    display: flex;
+.about {
+  display: flex;
+  padding: 2rem;
+
+  min-height: 80vh;
+
+  &--vision {
+    height: 100% !important;
+    min-height: 100%;
+  }
+
+  &__heading {
+    @include respond(tab-port) {
+      margin: 2rem 0;
+    }
+  }
+
+  &__text-box {
+    // background-color: aqua;
     padding: 2rem;
+    width: 50%;
+    height: 100%;
 
-    min-height: 80vh;
-
-    &__heading{
-        @include respond(tab-port) {
-            margin: 2rem 0;
-        }
-    }
-
-    &__text-box{
-        // background-color: aqua;
-        padding: 2rem;
-        width: 50%;
-        height: 100%;
-        @include respond(tab-port) {
-            width: 100%;
-            padding: 1rem;
-        }
-    }
-
-    &__image-box{
-        // background-color: aqua;
-        padding: 2rem;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @include respond(tab-port) {
-            width: 100%;
-        }
-    }
-
-    &__img{
-        width: 50%;
-
-        &--abt{
-            width: 100%;
-            align-self: flex-end;
-        }
+    &--vision {
+      width: 70%;
     }
 
     @include respond(tab-port) {
-        flex-direction: column;
-        text-align: center;
-
+      width: 100%;
+      padding: 1rem;
     }
+  }
+
+  &__image-box {
+    // background-color: aqua;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--vision {
+      width: 30%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 50%;
+
+    &--abt {
+      width: 100%;
+      align-self: flex-end;
+    }
+
+  }
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
