@@ -90,23 +90,26 @@
           <span class="heading__secondary--4">B</span>
         </h1>
         <h1 class="header__primary home__heading-main">
-          <span
-            class="header__primary--1"
+          <div
+            class="header__primary--1 header__primary-x"
             onmouseover="displayLetter('1')"
             onmouseout="addLetter('1')"
-            >B</span
+            data-speed="4"
+            >B</div
           >
-          <span
-            class="header__primary--2"
+          <div
+            class="header__primary--2 header__primary-x"
             onmouseover="displayLetter('2')"
             onmouseout="addLetter('2')"
-            >B</span
+            data-speed="3"
+            >B</div
           >
-          <span
-            class="header__primary--3"
+          <div
+            class="header__primary--3 header__primary-x"
             onmouseover="displayLetter('3')"
             onmouseout="addLetter('3')"
-            >B</span
+            data-speed="2"
+            >B</div
           >
         </h1>
       </div>
@@ -134,8 +137,8 @@
 
       let circle = document.getElementById("wrapper");
       const onMouseMove = (e) => {
-        circle.style.left = -200 + e.pageX + "px";
-        circle.style.top = -100 + e.pageY + "px";
+        circle.style.left = -190 + e.pageX + "px";
+        circle.style.top = -150 + e.pageY + "px";
       };
       document.addEventListener("mousemove", onMouseMove);
     </script>

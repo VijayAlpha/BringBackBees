@@ -30,7 +30,7 @@
 
   &__text--2 {
     position: relative;
-    top: 30%;
+    top: 20%;
 
     left: 50%;
     transform: translateX(-50%);
@@ -45,7 +45,7 @@
   }
 
   &__col {
-    // background-color: red;
+    background-color: $color-black;
     flex-grow: 1;
     text-align: center;
     border: 1px $color-black solid;
@@ -67,7 +67,7 @@
   }
 
   &__row {
-    background-color: burlywood;
+    background-color: $color-black;
     flex-grow: 1;
     border: 1px $color-black solid;
     text-align: center;
@@ -79,7 +79,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    background-color: burlywood;
+    background-color: $color-black;
     width: 25rem;
     height: 25rem;
     border-radius: 100%;
@@ -90,8 +90,32 @@
     align-items: center;
   }
 
-  #blueprint-01{
-    background-image: url(./../../img/blueprint/BeeParty.svg);
+  .blueprint-01-bg{
+    background-image: url(./../../img/blueprint/BeeParty.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .blueprint-02-bg{
+    background-image: url(./../../img/blueprint/SocialMedia.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .blueprint-03-bg{
+    background-image: url(./../../img/blueprint/BeeVerse.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .blueprint-04-bg{
+    background-image: url(./../../img/blueprint/HoneyMarket.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .blueprint-05-bg{
+    background-image: url(./../../img/blueprint/Gallery.png);
     background-position: center;
     background-size: cover;
   }
