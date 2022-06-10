@@ -1,16 +1,18 @@
-.footer{
-    position: relative;
-    bottom: 0;
-    width: 96%;
-    margin: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 96%;
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 
+  @media only screen and (min-height: 100vh) {
+    position: absolute;
+    margin: 1rem 0;
+  }
 
-    @media only screen and (min-height: 100vh) {   position: absolute; }
-
-    &__text-box{
-        margin: 0 2rem;
-    }
+  &__text-box {
+    margin: 0 2rem;
+  }
 }
