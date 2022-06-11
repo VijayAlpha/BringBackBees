@@ -1,62 +1,70 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    // This defines what 1rem is
-    font-size: 60.5%; //1 rem = 10px; 10px/16px = 62.5%
+  // This defines what 1rem is
+  font-size: 60.5%; //1 rem = 10px; 10px/16px = 62.5%
 
-    @include respond(tab-land) { // width < 1200?
-        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
-    }
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
 
-    @include respond(tab-port) { // width < 900?
-        font-size: 45%; //1 rem = 8px, 8/16 = 50%
-    }
-    
-    @include respond(big-desktop) {
-        font-size: 75%; //1rem = 12, 12/16
-    }
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 45%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
 }
 
 body {
-    box-sizing: border-box;
-    min-height: 100vh;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
 }
 
-.body{
-    &__home{
-        overflow: hidden;
-        min-height: 98vh;
-        cursor: none;
+.body {
+  &__home {
+    overflow: hidden;
+    min-height: 98vh;
+    cursor: none;
+
+    @include respond(phone) {
+      // width < 900?
+      overflow: hidden;
     }
+  }
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    &__vision{
-        padding: 3rem 0;
-    }
+  &__vision {
+    padding: 3rem 0;
+  }
 }
 
-main{
-    padding: 3rem;
+main {
+  padding: 3rem;
 
-    @include respond(phone) { // width < 900?
-        padding: 3rem 1.2rem;
-    }
+  @include respond(phone) {
+    // width < 900?
+    padding: 3rem 1.2rem;
+  }
 }
 
 ::selection {
-    background-color: $color-primary;
-    color: $color-white;
+  background-color: $color-primary;
+  color: $color-white;
 }
