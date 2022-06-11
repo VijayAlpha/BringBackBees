@@ -15,6 +15,10 @@
     width: 23rem;
     height: 34rem;
     margin: 2rem;
+
+    &--partners{
+      height: 20rem;
+    }
     
     @include respond(phone) {
       width: 20rem;
@@ -32,6 +36,12 @@
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transform: scale(1.1);
     @include hoverBuzz;
+
+    &--partners{
+      height: 100%;
+      clip-path:none;
+      background-color: transparent;
+    }
   }
 
   &__border {
@@ -47,6 +57,10 @@
     width: 90%;
     height: 90%;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+    &--partners{
+      clip-path:none;
+    }
   }
 
   &__text-box {
