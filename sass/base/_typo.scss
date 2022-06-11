@@ -26,6 +26,12 @@ body {
     @include respond(tab-port) {
       font-size: 9.4rem;
     }
+
+    &--partners{
+      @include respond(tab-port) {
+        font-size: 5rem;
+      }
+    }
   }
 
   &__secondary {
