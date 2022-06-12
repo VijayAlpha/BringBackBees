@@ -8,15 +8,16 @@
   min-height: 65vh;
   margin: 6rem 0;
   // background-color: goldenrod;
-  border: 2px $color-secondary solid;
+  border: 2px $color-primary solid;
 
   &__title-bar {
     width: 100%;
     height: 10%;
-    border-bottom: 1px $color-secondary solid;
+    border-bottom: 1px $color-primary solid;
     font-size: 2.5rem;
     font-weight: 700;
     text-transform: uppercase;
+    color: $color-primary;
     & > div {
       margin: 2rem 0;
       padding: 0 2rem;
@@ -67,5 +68,6 @@
     background-color: $color-primary;
     border-radius: 4px;
     cursor: pointer;
+    color: $color-black;
   }
 }
