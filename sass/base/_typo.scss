@@ -2,7 +2,7 @@ body {
   font-family: "TTOctosquares-Black", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: $color-secondary;
+  color: $color-white;
 }
 
 .heading {
@@ -36,9 +36,11 @@ body {
 
   &__secondary {
     font-size: 3.5rem;
-    color: $color-secondary;
+    color: $color-white;
     text-transform: uppercase;
     line-height: 4rem;
+
+    // background-color: $color-primary;
     &--yellow {
       color: $color-primary;
     }
