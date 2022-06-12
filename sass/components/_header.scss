@@ -29,9 +29,6 @@
       color: $color-secondary;
     }
 
-    &--1 {
-    }
-
     @include respond("tab-port") {
       display: none;
     }
@@ -48,8 +45,7 @@
     line-height: 59px;
     text-align: center;
     letter-spacing: -0.065em;
-    // transform: translateX(5%);
-
+    // color: $color-primary;
     & span:not(:last-child) {
       position: absolute;
     }

@@ -107,7 +107,7 @@
             onmouseout="addLetter('1')"
             data-speed="4"
           >
-            <img src="./img/header-1.png" class="header__img header__img--1" alt="" srcset="" />
+            <img src="./img/black.svg" class="header__img header__img--1" alt="" srcset="" />
           </div>
           <div
             class="header__primary--text header__primary-x"
@@ -115,7 +115,7 @@
             onmouseout="addLetter('2')"
             data-speed="3"
           >
-            <img src="./img/header-2.png" class="header__img" alt="" srcset="" />
+            <img src="./img/black.svg" class="header__img header__img--2" alt="" srcset="" />
           </div>
           <div
             class="header__primary--text header__primary-x"
@@ -123,7 +123,7 @@
             onmouseout="addLetter('3')"
             data-speed="2"
           >
-            <img src="./img/header-3.png" class="header__img" alt="" srcset="" />
+            <img src="./img/black.svg" class="header__img header__img--3" alt="" srcset="" />
           </div>
         </div>
       </div>
@@ -142,11 +142,16 @@
       function displayLetter(n) {
         document.querySelector(`.heading__secondary--${n}`).style.visibility =
           "visible";
+
+          document.querySelector(`.header__img--${n}`).src = `./img/header-${n}.png`;
       }
 
       function addLetter(n) {
         document.querySelector(`.heading__secondary--${n}`).style.visibility =
           "hidden";
+
+          document.querySelector(`.header__img--${n}`).src = `./img/black.svg`;
+
       }
 
       let circle = document.getElementById("wrapper");
