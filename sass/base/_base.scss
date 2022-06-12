@@ -30,6 +30,9 @@ body {
   min-height: 100vh;
   position: relative;
   -webkit-font-smoothing: antialiased;
+
+  background-color: $color-secondary;
+  color: $color-primary;
 }
 
 .body {
@@ -37,6 +40,7 @@ body {
     overflow: hidden;
     min-height: 98vh;
     cursor: none;
+    color: $color-primary;
 
     @include respond(phone) {
       // width < 900?
@@ -66,5 +70,5 @@ main {
 
 ::selection {
   background-color: $color-primary;
-  color: $color-white;
+  color: $color-secondary;
 }
