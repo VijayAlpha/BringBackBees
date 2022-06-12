@@ -7,33 +7,23 @@
     height: 100%;
   }
 
-  &__primary {
-    font-family: "TTOctosquaresCond-BlackIt";
-    font-size: 50rem;
-    color: $color-primary;
-    text-align: center;
-    line-height: 40rem;
-    letter-spacing: -0.155em;
-    text-transform: uppercase;
-    transform: translateX(-4rem);
-    user-select: none;
-    -webkit-font-smoothing: antialiased;
-    object-fit: cover;
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
 
+  &__primary {
     display: flex;
     justify-content: center;
-    // &--1 {
-    //   width: 100%;
-    //   height: 100%;
-      
-    //   background-clip: text;
-    //   -webkit-background-clip: text;
-    //   color: transparent;
-    //   background-image: url(./../../img/test.jpg);
-    //   // background-repeat: repeat;
-    //   //       -webkit-background-clip: text;
-    //   //       -webkit-text-fill-color: transparent;
-    // }
+    height: 40rem;
+
+    &--text {
+      height: 38rem;
+      mask-image: url(./../../img/B.svg);
+      mask-repeat: round;
+      margin: -4rem;
+      transform: translateY(10%);
+    }
 
     & div:hover {
       color: $color-secondary;
@@ -55,8 +45,7 @@
     line-height: 59px;
     text-align: center;
     letter-spacing: -0.065em;
-    // transform: translateX(5%);
-
+    // color: $color-primary;
     & span:not(:last-child) {
       position: absolute;
     }
@@ -69,13 +58,11 @@
       height: 100vh;
       justify-content: center;
 
-      
       & span:not(:last-child) {
         position: relative;
-        &:hover{
+        &:hover {
           color: $color-primary;
         }
-  
       }
 
       & span:last-child {

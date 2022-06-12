@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <div class="navigation ">
+    <div class="navigation">
       <a href="/" class="navigation__link">
         <img src="img/logo-x1.png" alt="BBB Logo" class="navigation__logo" />
       </a>
@@ -53,7 +53,11 @@
           </a>
         </ul>
         <ul class="navigation__list">
-          <a href="https://twitter.com/bbbinsol?s=21&t=Na0ORo4D3f4-m0pW5IioYg" class="navigation__link" target="_blank">
+          <a
+            href="https://twitter.com/bbbinsol?s=21&t=Na0ORo4D3f4-m0pW5IioYg"
+            class="navigation__link"
+            target="_blank"
+          >
             <li class="navigation__item navigation__item--icon">
               <img
                 src="/img/icon-twitter.svg"
@@ -62,7 +66,11 @@
               />
             </li>
           </a>
-          <a href="https://instagram.com/bbbinsol?igshid=YmMyMTA2M2Y=" class="navigation__link" target="_blank">
+          <a
+            href="https://instagram.com/bbbinsol?igshid=YmMyMTA2M2Y="
+            class="navigation__link"
+            target="_blank"
+          >
             <li class="navigation__item navigation__item--icon">
               <img
                 src="/img/icon-instagram.svg"
@@ -92,29 +100,32 @@
           <span class="heading__secondary--3">Bees</span>
           <span class="heading__secondary--4">B</span>
         </h1>
-        <h1 class="header__primary home__heading-main">
+        <div class="header__primary home__heading-main">
           <div
-            class="header__primary--1 header__primary-x"
+            class="header__primary--text header__primary-x"
             onmouseover="displayLetter('1')"
             onmouseout="addLetter('1')"
             data-speed="4"
-            >B</div
           >
+            <img src="./img/black.svg" class="header__img header__img--1" alt="" srcset="" />
+          </div>
           <div
-            class="header__primary--2 header__primary-x"
+            class="header__primary--text header__primary-x"
             onmouseover="displayLetter('2')"
             onmouseout="addLetter('2')"
             data-speed="3"
-            >B</div
           >
+            <img src="./img/black.svg" class="header__img header__img--2" alt="" srcset="" />
+          </div>
           <div
-            class="header__primary--3 header__primary-x"
+            class="header__primary--text header__primary-x"
             onmouseover="displayLetter('3')"
             onmouseout="addLetter('3')"
             data-speed="2"
-            >B</div
           >
-        </h1>
+            <img src="./img/black.svg" class="header__img header__img--3" alt="" srcset="" />
+          </div>
+        </div>
       </div>
     </header>
     <footer class="footer">
@@ -131,11 +142,16 @@
       function displayLetter(n) {
         document.querySelector(`.heading__secondary--${n}`).style.visibility =
           "visible";
+
+          document.querySelector(`.header__img--${n}`).src = `./img/header-${n}.png`;
       }
 
       function addLetter(n) {
         document.querySelector(`.heading__secondary--${n}`).style.visibility =
           "hidden";
+
+          document.querySelector(`.header__img--${n}`).src = `./img/black.svg`;
+
       }
 
       let circle = document.getElementById("wrapper");
@@ -145,7 +161,6 @@
       };
       document.addEventListener("mousemove", onMouseMove);
     </script>
-        <script src="./index.js"></script>
-
+    <script src="./index.js"></script>
   </body>
 </html>
