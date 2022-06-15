@@ -11,6 +11,13 @@ document.querySelector(".nav-btn").addEventListener("click", (e) => {
   navEl.classList.toggle('navigation__open');
 });
 
+let circle = document.getElementById("wrapper");
+const onMouseMove = (e) => {
+  circle.style.left = -190 + e.pageX + "px";
+  circle.style.top = -150 + e.pageY + "px";
+};
+document.addEventListener("mousemove", onMouseMove);
+
 // document.addEventListener("mousemove" , function (e) {
 //  this.querySelectorAll('.header__primary-x').forEach(el => {
 //     const speed = el.getAttribute('data-speed');

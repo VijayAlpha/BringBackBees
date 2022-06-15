@@ -30,7 +30,7 @@ body {
   min-height: 100vh;
   position: relative;
   -webkit-font-smoothing: antialiased;
-
+  cursor: none;
   background-color: $color-secondary;
   color: $color-primary;
 }
@@ -39,7 +39,6 @@ body {
   &__home {
     overflow: hidden;
     min-height: 98vh;
-    cursor: none;
     color: $color-primary;
 
     @include respond(phone) {

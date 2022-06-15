@@ -4,8 +4,7 @@
   height: 40vh;
   min-height: 65vh;
   margin: 4rem 0;
-  // background-color: aqua;
-  cursor: pointer;
+  cursor: none;
 
   display: inline-flex;
   flex-wrap: wrap;
@@ -13,37 +12,6 @@
 
  
 
-  &__text {
-    padding: 0.4rem 1rem;
-    border-radius: 2px;
-    text-transform: uppercase;
-    background-color: $color-primary;
-    color: $color-black;
-    width: fit-content;
-  }
-
-  &__col > &__text {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  &__text--2 {
-    position: relative;
-    top: 20%;
-
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  &__text--4 {
-    position: relative;
-    top: 70%;
-
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
   &__col {
     background-color: $color-black;
@@ -101,6 +69,40 @@
       transform: translate(-50%, -50%) scale(1.1);
     }
   }
+
+  &__col > &__text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  
+  &__text {
+    padding: 0.4rem 1rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    background-color: $color-primary;
+    color: $color-black;
+    width: fit-content;
+  }
+
+  &__text--2 {
+    position: relative;
+    top: 20%;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__text--4 {
+    position: relative;
+    top: 70%;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 
   .blueprint-01-bg{
     background-image: url(./../../img/blueprint/BeeParty.png);

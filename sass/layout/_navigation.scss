@@ -1,5 +1,4 @@
 .navigation {
-  // background-color: aqua;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,6 +72,7 @@
     text-decoration: none;
     margin: 0 0.2rem;
     font-size: 90%;
+    cursor: none;
   }
 
   &__item {
