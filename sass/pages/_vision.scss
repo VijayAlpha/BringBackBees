@@ -1,9 +1,32 @@
 .vision{
+    height: 100% !important;
+    min-height: 100%;
     margin: 4.2rem 0;
+
+    &__text-box {
+        padding: 2rem;
+        width: 70%;
+        height: 100%;
+    
+        @include respond(tab-port) {
+          width: 100%;
+          padding: 1rem;
+        }
+      }
+
+      &__heading {
+        @include respond(tab-port) {
+          margin: 2rem 0;
+        }
+      }
+
     &__image-box{
-        width: 98vw;
-        padding: 3rem;
-        text-align: center;
+        width: 35%;
+        &--center{
+            width: 98vw;
+            padding: 3rem;
+            text-align: center;
+        }
     }
 
     &__image{

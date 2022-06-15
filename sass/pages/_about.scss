@@ -6,10 +6,7 @@
     flex-direction: column-reverse;
     text-align: center;
   }
-  &--vision {
-    height: 100% !important;
-    min-height: 100%;
-  }
+
 
   &__heading {
     @include respond(tab-port) {
@@ -43,9 +40,7 @@
     justify-content: center;
     align-items: center;
 
-    &--vision {
-      width: 30%;
-    }
+   
 
     @include respond(tab-port) {
       width: 100%;
@@ -55,13 +50,9 @@
 
   &__img {
     width: 50%;
-
     &--abt {
       width: 100%;
       align-self: flex-end;
     }
-
   }
-
- 
 }
