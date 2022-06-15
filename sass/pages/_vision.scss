@@ -5,6 +5,16 @@
     overflow-x: hidden;
     padding: 0 4rem;
 
+    @include respond(tab-port) {
+     flex-direction: column-reverse;
+     padding: 0 1rem;
+     margin: 2rem 0;
+
+     &:nth-child(2){
+      display: none;
+     }
+    }
+
     &__text-box {
         padding: 2rem;
         width: 70%;
@@ -27,10 +37,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        
+        @include respond(tab-port) {
+          width: 100%;
+        }
+
         &--center{
             width: 98vw;
             padding: 3rem;
             text-align: center;
+
+            @include respond(tab-port) {
+             display: none;
+            }
         }
     }
 
@@ -38,7 +58,7 @@
         width: 65%;
 
         @include respond(tab-port) {
-            width: 100%;
+            width: 60%;
             padding: 1rem;
         }
     }
