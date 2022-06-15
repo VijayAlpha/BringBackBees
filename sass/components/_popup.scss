@@ -1,13 +1,11 @@
 .popup {
   display: none;
-
   font-family: $font-montserrat;
   font-weight: 700;
   width: 75vw;
   height: 40vh;
   min-height: 65vh;
   margin: 6rem 0;
-  // background-color: goldenrod;
   border: 2px $color-primary solid;
 
   &__title-bar {
@@ -22,17 +20,12 @@
       margin: 2rem 0;
       padding: 0 2rem;
     }
-
-
   }
 
-//   &__title{
-//        // color: $color-white;
-//     // background-color: $color-primary;
-//     // width: fit-content;
-//   }
-
   &__container{
+    overflow-y: scroll;
+    height: 90%;
+    font-weight: 400;
     @include respond(tab-port) {
       flex-direction: column;
     }
@@ -42,8 +35,7 @@
         width: 50%;
         @include respond(tab-port) {
           width: 100%;
-        }
-        
+        }   
     }
   }
 
@@ -51,9 +43,6 @@
     font-size: 1.8rem;
     margin: 2rem 0;
     text-transform: uppercase;
-    // color: $color-white;
-    // background-color: $color-primary;
-    // width: fit-content;
   }
 
   &__details {

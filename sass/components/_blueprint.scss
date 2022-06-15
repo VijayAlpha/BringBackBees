@@ -50,6 +50,10 @@
     flex-grow: 1;
     text-align: center;
     border: 1px $color-primary solid;
+    
+    &:nth-child(odd){
+      @include hoverBuzz;
+    }
 
     @include respond(tab-port) {
       display: none;
@@ -72,6 +76,8 @@
     flex-grow: 1;
     border: 1px $color-primary solid;
     text-align: center;
+
+    @include hoverBuzz;
   }
 
   &__center {
@@ -89,6 +95,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &:hover{
+      transform: translate(-50%, -50%) scale(1.1);
+    }
   }
 
   .blueprint-01-bg{
