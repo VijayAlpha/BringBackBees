@@ -77,9 +77,17 @@
 
   &__position {
     font-size: 1.5rem;
+    background-color: $color-primary;
+    // width: fit-content;
     color: $color-secondary;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    // position: relative;
+    // left: 50%;
+    // transform: translateX(-50%);
   }
 
   &__social {
