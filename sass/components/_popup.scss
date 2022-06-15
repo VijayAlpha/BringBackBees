@@ -52,14 +52,14 @@
 
   &__heading {
     font-size: 1.8rem;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0 ;
     text-transform: uppercase;
     color: $color-primary;
   }
 
   &__details {
     font-size: 1.4rem;
-    margin: 1rem 0;
+    // margin: 1rem 0;
     text-align: justify;
   }
 

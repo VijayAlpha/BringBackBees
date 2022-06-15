@@ -10,9 +10,10 @@
   flex-wrap: wrap;
   gap: 12px;
 
+  @include respond(tab-port) {
+    min-height: 40vh;
+  }
  
-
-
   &__col {
     background-color: $color-black;
     flex-grow: 1;
@@ -20,7 +21,8 @@
     border: 1px $color-primary solid;
     
     &:nth-child(odd){
-      @include hoverBuzz;
+      @include hoverBuzz; 
+      display: none;
     }
 
     @include respond(tab-port) {
