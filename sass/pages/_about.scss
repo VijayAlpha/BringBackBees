@@ -2,8 +2,10 @@
   display: flex;
   padding: 2rem;
   
-  // min-height: 80vh;
-
+  @include respond(tab-port) {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
   &--vision {
     height: 100% !important;
     min-height: 100%;
@@ -32,8 +34,10 @@
   }
 
   &__image-box {
-    // background-color: aqua;
-    padding: 2rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 0 2rem;
     width: 45%;
     display: flex;
     justify-content: center;
@@ -45,6 +49,7 @@
 
     @include respond(tab-port) {
       width: 100%;
+      position: relative;
     }
   }
 
@@ -58,8 +63,5 @@
 
   }
 
-  @include respond(tab-port) {
-    flex-direction: column;
-    text-align: center;
-  }
+ 
 }
