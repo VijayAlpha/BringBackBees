@@ -27,28 +27,36 @@
       </div>
     </div>
 
-    <div class="navigation">
-      <a href="/" class="navigation__link">
+    <div class="navigation" style="cursor: none">
+      <a href="/" class="navigation__link" style="cursor: none">
         <img src="img/logo-x1.png" alt="BBB Logo" class="navigation__logo" />
       </a>
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <a href="#" class="navigation__link">
+          <a href="#" class="navigation__link" style="cursor: none">
             <li class="navigation__item navigation__item--current">Home</li>
           </a>
-          <a href="./about.html" class="navigation__link">
+          <a href="./about.html" class="navigation__link" style="cursor: none">
             <li class="navigation__item">About</li>
           </a>
-          <a href="./vision.html" class="navigation__link">
+          <a href="./vision.html" class="navigation__link" style="cursor: none">
             <li class="navigation__item">Vision</li>
           </a>
-          <a href="./partner.html" class="navigation__link">
+          <a
+            href="./partner.html"
+            class="navigation__link"
+            style="cursor: none"
+          >
             <li class="navigation__item">Parters</li>
           </a>
-          <a href="./team.html" class="navigation__link hvr-buzz-out">
+          <a
+            href="./team.html"
+            class="navigation__link hvr-buzz-out"
+            style="cursor: none"
+          >
             <li class="navigation__item">Team</li>
           </a>
-          <a href="./faq.html" class="navigation__link">
+          <a href="./faq.html" class="navigation__link" style="cursor: none">
             <li class="navigation__item">FAQ</li>
           </a>
         </ul>
@@ -57,6 +65,7 @@
             href="https://twitter.com/bbbinsol?s=21&t=Na0ORo4D3f4-m0pW5IioYg"
             class="navigation__link"
             target="_blank"
+            style="cursor: none"
           >
             <li class="navigation__item navigation__item--icon">
               <img
@@ -70,6 +79,7 @@
             href="https://instagram.com/bbbinsol?igshid=YmMyMTA2M2Y="
             class="navigation__link"
             target="_blank"
+            style="cursor: none"
           >
             <li class="navigation__item navigation__item--icon">
               <img
@@ -79,7 +89,12 @@
               />
             </li>
           </a>
-          <a href="#" class="navigation__link" target="_blank">
+          <a
+            href="#"
+            class="navigation__link"
+            target="_blank"
+            style="cursor: none"
+          >
             <li class="navigation__item navigation__item--icon">
               <img
                 src="/img/icon-discord.svg"
@@ -107,7 +122,7 @@
             onmouseout="addLetter('1')"
             data-speed="4"
           >
-            <img src="./img/black.svg" class="header__img header__img--1"   />
+            <img src="./img/black.svg" class="header__img header__img--1" />
           </div>
           <div
             class="header__primary--text header__primary-x"
@@ -123,7 +138,7 @@
             onmouseout="addLetter('3')"
             data-speed="2"
           >
-            <img src="./img/black.svg" class="header__img header__img--3"  />
+            <img src="./img/black.svg" class="header__img header__img--3" />
           </div>
         </div>
       </div>
@@ -132,7 +147,7 @@
       <span class="footer__text-box"> © 2022, Bring Back Bees. </span>
 
       <div class="button button__il">
-        <a href="./roadmap.html" class="navigation__link">
+        <a href="./roadmap.html" class="navigation__link" style="cursor: none">
           <span class="button__text">ROADMAP </span>
         </a>
       </div>
@@ -143,15 +158,16 @@
         document.querySelector(`.heading__secondary--${n}`).style.visibility =
           "visible";
 
-          document.querySelector(`.header__img--${n}`).src = `./img/header-${n}.jpg`;
+        document.querySelector(
+          `.header__img--${n}`
+        ).src = `./img/header-${n}.jpg`;
       }
 
       function addLetter(n) {
         document.querySelector(`.heading__secondary--${n}`).style.visibility =
           "hidden";
 
-          document.querySelector(`.header__img--${n}`).src = `./img/black.svg`;
-
+        document.querySelector(`.header__img--${n}`).src = `./img/black.svg`;
       }
 
       let circle = document.getElementById("wrapper");
