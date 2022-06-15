@@ -44,7 +44,7 @@ body {
 
     @include respond(phone) {
       // width < 900?
-      overflow: hidden;
+      overflow: scroll;
     }
   }
 }
