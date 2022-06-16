@@ -34,6 +34,10 @@ body {
   overflow-x: hidden;
   background-color: $color-secondary;
   color: $color-primary;
+
+  @include respond(phone) {
+    cursor: default;
+  }
 }
 
 .body {

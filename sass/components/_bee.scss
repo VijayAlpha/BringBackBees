@@ -262,7 +262,7 @@ $bluebee: #7ec0ee;
   position: absolute;
   transform: scale(0.1);
   pointer-events: none;
-  @include respond(tab-port) {
+  @include respond(phone) {
     display: none;
   }
 }
