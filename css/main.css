@@ -198,6 +198,15 @@ body {
   text-align: justify;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .para {
+    font-weight: 400;
+    color: #eee;
+    margin: 0 !important;
+    font-size: 2rem;
+  }
+}
+
 .margin {
   margin: 2rem;
 }
@@ -1954,6 +1963,7 @@ al .header__text-box {
   .about__image-box {
     width: 100%;
     position: relative;
+    padding: 2rem;
   }
 }
 

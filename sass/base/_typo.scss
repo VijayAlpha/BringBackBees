@@ -52,4 +52,11 @@ body {
   letter-spacing: -0.1rem;
   font-weight: 600;
   text-align: justify;
+
+  @include respond(tab-port) {
+    font-weight: 400;
+    color: $color-grey-light-2;
+    margin: 0 !important;
+    font-size: 2rem;
+  }
 }
