@@ -66,6 +66,7 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
   cursor: none;
+  overflow-x: hidden;
   background-color: #000000;
   color: #F8BE1D;
 }
@@ -98,6 +99,23 @@ body {
 
 .main__vision {
   padding: 3rem 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6d5000;
+  opacity: 0.1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F8BE1D;
 }
 
 main {
