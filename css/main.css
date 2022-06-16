@@ -2015,6 +2015,7 @@ al .header__text-box {
 @media only screen and (max-width: 56.25em) {
   .vision__heading {
     margin: 2rem 0;
+    text-align: center;
   }
 }
 

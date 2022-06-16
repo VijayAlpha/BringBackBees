@@ -29,6 +29,7 @@
       &__heading {
         @include respond(tab-port) {
           margin: 2rem 0;
+          text-align: center;
         }
       }
 
