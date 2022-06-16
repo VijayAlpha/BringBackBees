@@ -17,7 +17,8 @@
     margin: 2rem;
 
     &--partners{
-      height: 20rem;
+      height: 20rem !important;
+      width: 20rem !important;
     }
     
     @include respond(phone) {
@@ -60,6 +61,8 @@
 
     &--partners{
       clip-path:none;
+      height: auto;
+      width: 90%;
     }
   }
 
