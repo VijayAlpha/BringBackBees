@@ -1236,7 +1236,7 @@ al .header__text-box {
             flex-direction: column;
     font-size: 14rem;
     line-height: 109px;
-    height: 100vh;
+    height: 60vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
