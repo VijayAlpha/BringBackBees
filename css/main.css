@@ -1104,6 +1104,11 @@ body {
   transition: 0.2s;
 }
 
+.button__text--1 {
+  background-color: #F8BE1D;
+  color: #000000;
+}
+
 .button__image {
   height: 70%;
 }
