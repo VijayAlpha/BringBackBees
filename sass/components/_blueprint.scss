@@ -11,7 +11,8 @@
   gap: 12px;
 
   @include respond(tab-port) {
-    min-height: 40vh;
+    min-height: 90vh;
+    flex-direction: column;
   }
  
   &__col {
@@ -22,13 +23,6 @@
     
     &:nth-child(odd){
       @include hoverBuzz; 
-    }
-
-    @include respond(tab-port) {
-      &:nth-child(odd){
-        display: none !important;
-      }
-     
     }
 
     &--center {
